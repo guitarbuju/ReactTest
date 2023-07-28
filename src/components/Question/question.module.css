@@ -1,0 +1,10 @@
+.ul{
+    text-align: start;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+
+.ul li span{
+    margin-left: 20px;
+}

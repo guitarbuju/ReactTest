@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Luckiest+Guy&family=Poppins&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  color: white;
+  background-color: #198754;
+}
+
+.container h1{
+  font-family: 'Luckiest Guy', cursive;
+   text-shadow: 2px 2px 2px gray;
+}
+
+.buttons{
+  display:flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.buttons button{
+  background-color: #198754;
+  margin-top: -13px;
+  text-decoration: none; 
+  color:white;
+}
+
+button:hover{
+background-color:#22d17f;
+border:none;
+ color:yellow;
+  text-shadow: 1px 1px 1px gray;
+  font-size: 18px;
+
+}
