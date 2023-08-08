@@ -1,5 +1,5 @@
-import { useStore, useStore2, useStore3, useStore4,useStore5 } from "../../../store";
-import { Questions } from "../../../stuff";
+import { useStore, useStore2, useStore3, useStore4,useStore5 } from "../../store";
+import { Questions } from "../../stuff";
 import styles from "./q.module.css";
 
 const Final = () => {

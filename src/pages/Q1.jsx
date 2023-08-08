@@ -1,7 +1,7 @@
-import { Questions } from "../../../stuff";
+import { Questions } from "../../stuff";
 import Question from "../components/Question/Question";
 import { Link } from "react-router-dom";
-import { useStore } from "../../../store";
+import { useStore } from "../../store";
 import styles from "./q.module.css";
 
 const Q1 = () => {
