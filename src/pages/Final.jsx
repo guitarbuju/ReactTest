@@ -10,7 +10,7 @@ const Final = () => {
 
   const total = cartSum;
   const divisor = 5 * Questions.length;
-  const performance = total / divisor;
+  const performance = (total / divisor)*100;
   let val = "";
   const tolerance = 0.01; // Define a tolerance value for floating-point comparisons
 
@@ -47,7 +47,7 @@ const Final = () => {
       {total && (
         <div>
           <h5>your total is {total}</h5>
-          <h5>your performance is {performance}</h5>
+          <h5>your performance is {performance} %</h5>
           {val}
           {performance >= 0.75 ? (
             <h1 className={styles.yeah}>
