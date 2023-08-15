@@ -2,7 +2,9 @@ import { create } from "zustand";
 
 const useStore = create((set) => ({
   selectedCarga: "",
+  cart:[],
   setSelectedCarga: (carga) => set(() => ({ selectedCarga: carga })),
+  addToCart: (carga) => set((state) => ({ cart: [...state.cart, carga] })),
 }));
 
 const useStore2 = create((set) => ({

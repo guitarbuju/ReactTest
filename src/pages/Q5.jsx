@@ -1,7 +1,7 @@
 import { Questions } from "../../stuff";
 import Question from "../components/Question/Question";
 import { Link } from "react-router-dom";
-import { useStore5 } from "../../store";
+import { useStore5,useStore } from "../../store";
 import styles from "./q.module.css";
 
 const Q5 = () => {
@@ -9,14 +9,17 @@ const Q5 = () => {
   const respuestas = Questions[4].answers.map((e) => e.answer);
   const carga = Questions[4].answers.map((e) => e.charge);
 
-  // const [selectedAnswer, setSelectedAnswer] = useState("");
-  // const [selectedCarga, setSelectedCarga] = useState('');
+  const addToCart = useStore((state) => state.addToCart);
+  // eslint-disable-next-line no-unused-vars
+  const cart = useStore((state) => state.cart);
+  
 
   const setSelectedCarga = useStore5((state) => state.setSelectedCarga5);
   const selectedCarga = useStore5((state) => state.selectedCarga5);
 
   const handleAnswerChange = (carga) => {
     setSelectedCarga(carga);
+    addToCart(carga)
   };
 
   return (

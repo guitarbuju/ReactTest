@@ -8,12 +8,13 @@ const Q1 = () => {
   const pregunta = Questions[0].question;
   const respuestas = Questions[0].answers.map((e) => e.answer);
   const carga = Questions[0].answers.map((e) => e.charge);
-
+  const addToCart = useStore((state) => state.addToCart);
   const setSelectedCarga = useStore((state) => state.setSelectedCarga);
   const selectedCarga = useStore((state) => state.selectedCarga);
 
   const onAnswerChange = (carga) => {
-    setSelectedCarga(carga);
+     setSelectedCarga(carga);
+    addToCart(carga);
   };
 
   return (

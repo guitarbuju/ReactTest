@@ -13,7 +13,6 @@ const Question = ({
     const selectedValue = event.target.value;
     const selectedIndex = respuestas.indexOf(selectedValue);
 
-    // Call the onAnswerChange function in the parent component
     onAnswerChange(carga[selectedIndex]);
   };
   return (
